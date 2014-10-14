@@ -106,6 +106,14 @@ uint16_t si4703_registers[16]; //There are 16 registers, each 16 bits large
 #define RDSS  11
 #define STEREO  8
 
+void gotoChannel(int newChannel);
+int readChannel(void);
+byte seek(byte seekDirection);
+void si4703_init(void);
+byte si4703_updateRegisters(void);
+void si4703_readRegisters(void);
+void si4703_printRegisters(void);
+
 void setup() {                
   pinMode(13, OUTPUT);
   pinMode(A0, INPUT); //Optional trimpot for analog station control

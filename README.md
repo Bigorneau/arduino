@@ -7,6 +7,7 @@ dependencies
 ============
  - [avr-gcc](https://www.archlinux.org/packages/community/x86_64/avr-gcc/)
  - [avr-libc](https://www.archlinux.org/packages/community/any/avr-libc/)
+ - [arduino-mk](https://aur.archlinux.org/packages/arduino-mk/)
 
 hardware
 ========

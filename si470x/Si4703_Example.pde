@@ -118,7 +118,7 @@ void setup() {
   pinMode(13, OUTPUT);
   pinMode(A0, INPUT); //Optional trimpot for analog station control
 
-  Serial.begin(57600);
+  Serial.begin(115200);
   Serial.println();
 
   si4703_init(); //Init the Si4703 - we need to toggle SDIO before Wire.begin takes over.

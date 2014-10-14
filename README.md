@@ -3,6 +3,11 @@ arduino
 
 open-source electronics prototyping without IDE
 
+dependencies
+============
+ - [avr-gcc](https://www.archlinux.org/packages/community/x86_64/avr-gcc/)
+ - [avr-libc](https://www.archlinux.org/packages/community/any/avr-libc/)
+
 hardware
 ========
  - [Si4703 FM Tuner Basic Breakout](https://www.sparkfun.com/products/11083)

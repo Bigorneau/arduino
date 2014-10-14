@@ -525,8 +525,8 @@ byte si4703_updateRegisters(void) {
     byte high_byte = si4703_registers[regSpot] >> 8;
     byte low_byte = si4703_registers[regSpot] & 0x00FF;
 
-    Wire.send(high_byte); //Upper 8 bits
-    Wire.send(low_byte); //Lower 8 bits
+    Wire.write(high_byte); //Upper 8 bits
+    Wire.write(low_byte); //Lower 8 bits
   }
 
   //End this transmission
@@ -552,8 +552,8 @@ void si4703_readRegisters(void){
   //Remember, register 0x0A comes in first so we have to shuffle the array around a bit
   for(int x = 0x0A ; ; x++) { //Read in these 32 bytes
     if(x == 0x10) x = 0; //Loop back to zero
-    si4703_registers[x] = Wire.receive() << 8;
-    si4703_registers[x] |= Wire.receive();
+    si4703_registers[x] = Wire.read() << 8;
+    si4703_registers[x] |= Wire.read();
     if(x == 0x09) break; //We're done!
   }
 }

@@ -5,9 +5,10 @@ open-source electronics prototyping without IDE
 
 dependencies
 ============
- - [avr-gcc](https://www.archlinux.org/packages/community/x86_64/avr-gcc/)
- - [avr-libc](https://www.archlinux.org/packages/community/any/avr-libc/)
- - [arduino-mk](https://aur.archlinux.org/packages/arduino-mk/)
+ - [arduino-mk](https://aur.archlinux.org/packages/arduino-mk/) (Makefile)
+ - [avr-gcc](https://www.archlinux.org/packages/community/x86_64/avr-gcc/) (toolchain)
+ - [avr-libc](https://www.archlinux.org/packages/community/any/avr-libc/) (headers, libs)
+ - [avrdude](https://www.archlinux.org/packages/community/i686/avrdude/) (upload)
 
 hardware
 ========
